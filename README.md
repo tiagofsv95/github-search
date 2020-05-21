@@ -32,3 +32,4 @@ Caso deseje rodar a aplicação em ambiente local, bastar fazer um `clone` desse
 - Obs: Esse projeto é um refactoring do **[desafio-front-end-concrete](https://github.com/tiagofsv95/desafio-front-end-concrete)** , aonde ele foi rescrito usando usando **TypeScript**, alem de ter sido adicionado um tema dark, que utiliza o conceito de **contextApi** e **hooks** para fazer a troca dos themas.
 
 Feito com ❤️ by Tiago Felipe
+
