@@ -18,6 +18,7 @@ export const Perfil = styled.div`
   img {
     height: 280px;
     width: 280px;
+    background: ${(props) => props.theme.colors.others};
     justify-content: center;
   }
 `;
