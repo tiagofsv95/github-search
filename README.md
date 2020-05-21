@@ -1,44 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img alt="GithubSearch" src="./src/assets/image/githubsearch.png" />
 
-## Available Scripts
+<br/>
+<h3 align="center">
 
-In the project directory, you can run:
+</h3>
 
-### `yarn start`
+<p align="center">
+  <a href="https://www.linkedin.com/in/tiago-felipe-sanches-vieira-457764139/r">
+    <img alt="Made by Tiago Felipe" src="https://img.shields.io/badge/made%20by-Tiago%20Felipe-%2304D361">
+  </a>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
+</p>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<br/>
 
-### `yarn test`
+![Aplication Demo](demo/demo.gif)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
+<p>Desafio que tem como proposta implementar uma aplicação client-side, que consulte a API do GitHub e mostre os repositórios de um determinado usuário. Esta aplicação deve funcionar nos navegadores mais recentes do mercado.<p/>
 
-### `yarn build`
+- Ao buscar um usuário pelo login do github, redireciona para uma pagina de resultado de busca caso o usuario tenha sido encontrado, ou para uma mensagem amigavel de usuario não encontrado.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>Foi usado como framework o react</p>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+A aplicação esta hospedada no **[githubsearch-afda7.web.app/](https://githubsearch-afda7.web.app/)**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Caso deseje rodar a aplicação em ambiente local, bastar fazer um `clone` desse repositorio e ao final rodar `yarn` para instalar as dependencias, e depois `yarn start` para iniciar a aplicação.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Obs: Esse projeto é um refactoring do **[desafio-front-end-concrete](https://github.com/tiagofsv95/desafio-front-end-concrete)** , aonde ele foi rescrito usando usando **TypeScript**, alem de ter sido adicionado um tema dark, que utiliza o conceito de **contextApi** e **hooks** para fazer a troca dos themas.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito com ❤️ by Tiago Felipe
