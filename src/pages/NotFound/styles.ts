@@ -8,6 +8,6 @@ export const Container = styled.div`
 
   p {
     font-size: 40px;
-    color: #ac53f2;
+    color: ${(props) => props.theme.colors.others};
   }
 `;

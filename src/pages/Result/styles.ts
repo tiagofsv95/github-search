@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   margin: auto;
-  background: #fff;
+  background: ${(props) => props.theme.colors.backgroud};
 `;
 
 export const Perfil = styled.div`
@@ -28,14 +28,14 @@ export const PerfilName = styled.p`
   margin-top: 12px;
   font-size: 35px;
   font-weight: 300;
-  color: #000000;
+  color: ${(props) => props.theme.colors.primaryText};
 `;
 
 export const PerfilLogin = styled.p`
   margin-top: 5px;
   font-size: 20px;
   font-weight: 300;
-  color: #5c5c5c;
+  color: ${(props) => props.theme.colors.secundaryText};
 `;
 
 export const PerfilCompany = styled.div`
@@ -48,7 +48,7 @@ export const PerfilCompany = styled.div`
       margin-left: 5px;
       font-size: 20px;
       font-weight: 300;
-      color: #5c5c5c;
+      color: ${(props) => props.theme.colors.secundaryText};
     }
   }
 `;
@@ -63,7 +63,7 @@ export const PerfilLocation = styled.div`
       margin-left: 5px;
       font-size: 20px;
       font-weight: 300;
-      color: #5c5c5c;
+      color: ${(props) => props.theme.colors.secundaryText};
     }
   }
 `;
@@ -78,7 +78,7 @@ export const PerfilFollowers = styled.div`
       margin-left: 5px;
       font-size: 20px;
       font-weight: 300;
-      color: #5c5c5c;
+      color: ${(props) => props.theme.colors.secundaryText};
     }
   }
 `;
@@ -93,7 +93,7 @@ export const PerfilFollowing = styled.div`
       margin-left: 5px;
       font-size: 20px;
       font-weight: 300;
-      color: #5c5c5c;
+      color: ${(props) => props.theme.colors.secundaryText};
     }
   }
 `;
@@ -108,7 +108,7 @@ export const PerfilRepos = styled.div`
       margin-left: 5px;
       font-size: 20px;
       font-weight: 300;
-      color: #5c5c5c;
+      color: ${(props) => props.theme.colors.secundaryText};
     }
   }
 `;
@@ -123,7 +123,7 @@ export const PerfilStars = styled.div`
       margin-left: 5px;
       font-size: 20px;
       font-weight: 300;
-      color: #5c5c5c;
+      color: ${(props) => props.theme.colors.secundaryText};
     }
   }
 `;
@@ -139,14 +139,14 @@ export const Repository = styled.div`
 `;
 
 export const RepositoryTitle = styled.div`
-  color: #ac53f2;
+  color: ${(props) => props.theme.colors.others};
   font-size: 35px;
 `;
 
 export const RepositoryDescription = styled.div`
   font-size: 20px;
   font-weight: 300;
-  color: #000;
+  color: ${(props) => props.theme.colors.primaryText};
 `;
 
 export const RepositoryStar = styled.div`
@@ -159,7 +159,7 @@ export const RepositoryStar = styled.div`
       margin-left: 5px;
       font-size: 20px;
       font-weight: 300;
-      color: #5c5c5c;
+      color: ${(props) => props.theme.colors.secundaryText};
     }
   }
 `;

@@ -8,24 +8,11 @@ import Result from '../pages/Result';
 const Routes: React.FC = () => {
   return (
     <Switch>
-      <Route
-        path="/"
-        exact
-        // render={(props) => <Dashboard {...props} />}
-        component={Main}
-      />
+      <Route path="/" exact component={Main} />
 
-      <Route
-        path="/notFound/:user"
-        // render={(props) => <Repository {...props} />}
-        component={NotFound}
-      />
+      <Route path="/notFound/:user" component={NotFound} />
 
-      <Route
-        path="/result/:user"
-        // render={(props) => <Repository {...props} />}
-        component={Result}
-      />
+      <Route path="/result/:user" component={Result} />
     </Switch>
   );
 };

@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fa';
 
 import Header from '../../components/Header/index';
+import { useTheme } from '../../hooks/themeContext';
 
 import api from '../../services/api';
 
@@ -48,6 +49,7 @@ interface RepositoryInterface {
 }
 
 const Result: React.FC = () => {
+  const { theme } = useTheme();
   const { user } = useParams();
   const [userState, setUserState] = useState<UserInterface>(
     {} as UserInterface,
@@ -87,31 +89,31 @@ const Result: React.FC = () => {
             <PerfilLogin>{userState.login}</PerfilLogin>
             <PerfilCompany>
               <div>
-                <FaBuilding size={20} color="#5c5c5c" />
+                <FaBuilding size={20} color={theme.colors.secundaryText} />
                 <p>{userState.company || ' '}</p>
               </div>
             </PerfilCompany>
             <PerfilLocation>
               <div>
-                <FaGlobe size={20} color="#5c5c5c" />
+                <FaGlobe size={20} color={theme.colors.secundaryText} />
                 <p>{userState.location}</p>
               </div>
             </PerfilLocation>
             <PerfilFollowing>
               <div>
-                <FaUserFriends size={20} color="#5c5c5c" />
+                <FaUserFriends size={20} color={theme.colors.secundaryText} />
                 <p>{userState.following}</p>
               </div>
             </PerfilFollowing>
             <PerfilRepos>
               <div>
-                <FaBoxOpen size={20} color="#5c5c5c" />
+                <FaBoxOpen size={20} color={theme.colors.secundaryText} />
                 <p>{userState.public_repos}</p>
               </div>
             </PerfilRepos>
             <PerfilStars>
               <div>
-                <FaStar size={20} color="#5c5c5c" />
+                <FaStar size={20} color={theme.colors.secundaryText} />
                 <p>{userState.public_gists}</p>
               </div>
             </PerfilStars>
@@ -128,7 +130,7 @@ const Result: React.FC = () => {
                 </RepositoryDescription>
                 <RepositoryStar>
                   <div>
-                    <FaStar size={25} color="#5c5c5c" />
+                    <FaStar size={25} color={theme.colors.secundaryText} />
                     <p>{repository.stargazers_count}</p>
                   </div>
                 </RepositoryStar>

@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 1152px;
   display: flex;
   flex-direction: row;
-  background: #fff;
+  background: ${(props) => props.theme.colors.backgroud};
   margin: auto;
   justify-content: center;
 
@@ -26,14 +26,21 @@ export const Form = styled.form`
 `;
 
 export const SearchButton = styled.button`
-  background: #ac53f2;
+  background: ${(props) => props.theme.colors.others};
   border: 0;
   padding: 0 15px;
   height: 50px;
   width: 100px;
-  border-radius: 2px;
+  border-top-right-radius: 49ex;
+  border-bottom-right-radius: 49ex;
 
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const HeaderButton = styled.button`
+  margin-left: 50px;
+  border: 0;
+  background: ${(props) => props.theme.colors.backgroud};
 `;

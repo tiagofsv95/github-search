@@ -5,8 +5,26 @@ export const Container = styled.div`
   height: 100%;
   min-width: 1152px;
   min-height: 700px;
-  background: #fff;
+  background: ${(props) => props.theme.colors.backgroud};
   padding: 30px;
+`;
+
+export const DivHeader = styled.div`
+  margin-right: 20px;
+`;
+
+export const Header = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 15px;
+`;
+
+export const HeaderButton = styled.button`
+  border: 0;
+  background: ${(props) => props.theme.colors.backgroud};
+`;
+
+export const DivForm = styled.div`
   margin-top: 244px;
   justify-content: center;
   align-items: center;
@@ -32,7 +50,7 @@ export const Form = styled.form`
 `;
 
 export const SearchButton = styled.button`
-  background: #ac53f2;
+  background: ${(props) => props.theme.colors.others};
   border: 0;
   padding: 0 15px;
   height: 50px;
